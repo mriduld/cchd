@@ -1,0 +1,9 @@
+{ "event_id": "e1", "event_time": "2022-01-01T00:00:00.000Z", "payload_type": "HealthcareService", "payload": "{\"id\":\"hcs1\",\"name\":\"First Healthcare Service\",\"service_type\":\"Pharmacy\",\"org_id\":\"org1\",\"loc_id\":\"loc1\"}" }
+{ "event_id": "e2", "event_time": "2022-01-01T00:00:01.000+10:00", "payload_type": "HealthcareService", "payload": "{\"id\":\"hcs3\",\"name\":\"Second Healthcare Service\",\"service_type\":\"GP\",\"org_id\":\"org2\",\"loc_id\":\"loc2\"}" }
+{ "event_id": "e3", "event_time": "2022-01-01T00:00:02.000+09:30", "payload_type": "HealthcareService", "payload": "{\"id\":\"hcs2\",\"name\":\"Third Healthcare Service\",\"service_type\":\"Hospital\",\"org_id\":\"org3\",\"loc_id\":\"loc3\"}" }
+{ "event_id": "e4", "event_time": "2022-01-01T00:00:03.000Z", "payload_type": "Organisation", "payload": "{\"id\":\"org1\",\"name\":\"Pharmacy owner\"}" }
+{ "event_id": "e5", "event_time": "2022-01-01T00:00:04.000+10:00", "payload_type": "Organisation", "payload": "{\"id\":\"org2\",\"name\":\"GP owner\"}" }
+{ "event_id": "e6", "event_time": "2022-01-01T00:00:05.000+09:30", "payload_type": "Organisation", "payload": "{\"id\":\"org3\",\"name\":\"Hospital owner\"}" }
+{ "event_id": "e7", "event_time": "2022-01-01T00:00:06.000Z", "payload_type": "Location", "payload": "{\"id\":\"loc1\",\"address\":{\"street\":\"1 First St\",\"suburb\":\"Sydney\",\"state\":\"NSW\",\"postcode\":\"2000\"}}" }
+{ "event_id": "e8", "event_time": "2022-01-01T00:00:07.000+10:00", "payload_type": "Location", "payload": "{\"id\":\"loc2\",\"address\":{\"street\":\"2 Second Rd\",\"suburb\":\"Melbourne\",\"state\":\"VIC\",\"postcode\":\"3000\"}}" }
+{ "event_id": "e9", "event_time": "2022-01-01T00:00:08.000+09:30", "payload_type": "Location", "payload": "{\"id\":\"loc3\",\"address\":{\"street\":\"3 Third St\",\"suburb\":\"Adelaide\",\"state\":\"SA\",\"postcode\":\"5000\"}}" }
