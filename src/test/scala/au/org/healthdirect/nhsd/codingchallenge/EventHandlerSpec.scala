@@ -2,7 +2,7 @@ package au.org.healthdirect.nhsd.codingchallenge
 
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
-import org.scalatest.junit.JUnitRunner
+import org.scalatestplus.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
 class EventHandlerSpec extends FunSuite {
@@ -30,27 +30,27 @@ class EventHandlerSpec extends FunSuite {
     )
     assert(
       EventHandler.validateAddress(address.copy(street = "  ")) ===
-      OperationResult.failure(("Missing street for address"))
+      OperationResult.failure("Missing street for address")
     )
     assert(
       EventHandler.validateAddress(address.copy(suburb = "  ")) ===
-        OperationResult.failure(("Missing suburb for address"))
+        OperationResult.failure("Missing suburb for address")
     )
     assert(
       EventHandler.validateAddress(address.copy(state = "  ")) ===
-        OperationResult.failure(("Missing state for address"))
+        OperationResult.failure("Missing state for address")
     )
     assert(
       EventHandler.validateAddress(address.copy(postcode = "  ")) ===
-        OperationResult.failure(("Missing postcode for address"))
+        OperationResult.failure("Missing postcode for address")
     )
     assert(
       EventHandler.validateAddress(address.copy(postcode = "abcd")) ===
-        OperationResult.failure(("Postcode should be 4 digit number"))
+        OperationResult.failure("Postcode should be 4 digit number")
     )
     assert(
       EventHandler.validateAddress(address.copy(postcode = "12345")) ===
-        OperationResult.failure(("Postcode should be 4 digit number"))
+        OperationResult.failure("Postcode should be 4 digit number")
     )
   }
 }

@@ -6,14 +6,12 @@ object SparkTestUtils {
   def withSpark[T](f: SparkSession => T): T = {
     val session = new SparkSession.Builder()
       .appName("test")
-      .config("spark.default.parallelism", 2)
-      .config("spark.sql.shuffle.partitions", 1)
-      .master("local")
+      .master("local[2]")
+      .config("spark.sql.shuffle.partitions", 2)
       .getOrCreate()
     try {
       f(session)
     } finally {
-      session.stop()
       session.close()
     }
   }

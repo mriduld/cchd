@@ -3,7 +3,7 @@ package au.org.healthdirect.nhsd.codingchallenge
 import com.github.mrpowers.spark.fast.tests.DatasetComparer
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
-import org.scalatest.junit.JUnitRunner
+import org.scalatestplus.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
 class EventHandlerSparkSpec extends FunSuite with DatasetComparer {
